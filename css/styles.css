@@ -1,0 +1,109 @@
+
+
+
+.flaticon-clock{
+	color:red;
+}
+.flaticon-clock:hover{
+	color:#ff3333;
+}
+.logo{
+	margin-top: .445em;
+	font-family:'Bree Serif', serif;
+	font-size: 1.356em;
+	color:red;
+}
+.logo a {
+	color:red;
+}
+.logo a:hover{
+	color:#ff3333;
+}
+
+
+#dropdown_nav
+{
+  margin-top: .445em;
+}
+
+#dropdown_nav ul
+{
+  list-style:none;
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0
+}
+
+#dropdown_nav ul a
+{
+  display:block;
+  color:#333;
+  text-decoration:none;
+  font-weight:700;
+ 
+}
+
+#dropdown_nav ul li
+{
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0
+}
+
+#dropdown_nav ul li.current-menu-item
+{
+  background:#ddd
+}
+
+#dropdown_nav ul li:hover
+{
+  background:#f6f6f6
+}
+
+#dropdown_nav ul ul
+{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#fff;
+  padding:0
+}
+
+#dropdown_nav ul ul li
+{
+  float:none;
+  width:200px
+}
+
+#dropdown_nav ul ul a
+{
+  line-height:120%;
+  padding:10px 15px
+}
+
+#dropdown_nav ul ul ul
+{
+  top:0;
+  left:100%
+}
+
+#dropdown_nav ul li:hover > ul
+{
+  display:block
+}
+
+
+table {
+	border: 1px solid red;
+}
+
+
+
+/*.start-menu {
+	border: 1px solid magenta;
+	max-width: 700px;
+	margin:auto;
+}*/
