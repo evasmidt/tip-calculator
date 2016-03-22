@@ -38,22 +38,32 @@
 
 	<div class="tabs-content" data-tabs-content="example-tabs">
   	<div class="tabs-panel is-active" id="panel1">
-    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
     	<div class="row">
-			<div class="large-6 medium-4 small-12 columns">Total Bill</div>
-			<div class="large-6 medium-4 small-12 columns"><input type="text" name="total" id="bill" placeholder="$0.00" required>
-		</div>
+			<div class="large-6 medium-4 small-12 columns"><strong>Total Bill</strong></div>
+			<div class="large-6 medium-4 small-12 columns">
+				<input type="text" name="total" id="bill" placeholder="$0.00" required>
+			</div>
 		<div class="row">
-			<div class="medium-4 columns">
-			<input id="standard" type="radio"><h4><i class="flaticon-money"></i> Average</h4>
+			<form>
+				<div class="medium-5 columns">
+				<input id="average" type="radio" value="average"><h4><i class="flaticon-money"></i> Average</h4>
+				</div>
+				<div class="medium-5 columns">
+				 <input id="generous" type="radio" value="generous"><h4><i class="flaticon-man"></i> Feelin Generous</h4>
+				</div>
+			</form>
 		</div>
 		
-		<div class="medium-4 columns">
-			<input id="standard" type="radio"><h4><i class="flaticon-man"></i> Feelin Generous</h4>
-		</div>
+		<div class="row">
+			<div class="large-offset-8 columns"><input type="submit" value="Calculate" onclick="calcDiningAverage" class="button">
+			</div>
 		</div>
 		<div class="row">
-			<div class="large-offset-8 columns"><a href="#" class="button">Calculate!</a></div>
+			<div class="large-6 medium-4 small-12 columns">
+			Tip: <span id="tip"></span><br>
+			Total: <span id="total"></span>
+			</div>
 		</div>
   	</div>
   	<div class="tabs-panel" id="panel2">
@@ -89,6 +99,7 @@
 
 	<footer></footer>
 	<!--<script src="js/scripts.js"></script>-->
+	<script src="js/scripts.js" type="text/javascript"></script>
 	<script src="foundation-5.5.3/js/vendor/jquery.js"></script>
 	<script src="foundation-5.5.3/js/foundation.min.js"></script>
 	<script src="foundation-5.5.3/js/foundation/foundation.tab.js">
