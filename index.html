@@ -2,56 +2,54 @@
 <html>
 <head>
 	<title>Tip Calculator</title>
-	<link rel="stylesheet" href="foundation-6/css/foundation.css" />
+	<link rel="stylesheet" href="foundation/css/foundation.css">
 	<link rel="stylesheet" type="text/css" href="icons/font/flaticon.css"> 
 	<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'> 
-	<script src="foundation-6/js/vendor/modernizr.js"></script>
-
+	<script src="foundation/js/vendor/modernizr.js"></script>
+	<script src="js/scripts.js" type="text/javascript"></script>
 </head>
 <body>
 	<header>
-		<div class="row">
-		<div class="small-2 columns logo">
-			<a href="#"><i class="flaticon-shopping"></i> TipCalculator</a>
-		</div>
-		</div>
-	
 			
 	</header>
 		
 	<div class="row">
 	<h1>Tip Calculator</h1>
-	<h2>When you don't want to have to think</h2>
+
+	<div data-alert class="alert-box">
+  TEST
+  <a href="#" class="close">&times;</a>
+</div>
+	<!--<h2>When you don't want to have to think</h2>-->
 	</div>
+	
 	<div class="row">
-		<ul class="tabs" data-tabs id="example-tabs">
-  			<li class="tabs-title"><a href="#panel1" aria-selected="true"><i class="flaticon-food-1"></i> Restaurant</a></li>
+		<ul class="tabs" data-tab>
+  			<li class="tabs-title active"><a href="#panel1"><i class="flaticon-food-1"></i> Restaurant</a></li>
   			<li class="tabs-title"><a href="#panel2"><i class="flaticon-food"></i> Delivery </a></li>
   			<li class="tabs-title"><a href="#panel3"><i class="flaticon-people"></i> Bar/Bartender </a></li>
   			<li class="tabs-title"><a href="#panel4"><i class="flaticon-beauty"></i>  Beauty Services </a></li>
-  			<li class="tabs-title"><a href="#panel5"><i class="flaticon-relax"></i>  Masseuse</a></li>
+  			
   			<li class="tabs-title"><a href="#panel6"><i class="flaticon-transport"></i>  Cab Driver</a></li>
-  			<li class="tabs-title"><a href="#panel7"><i class="flaticon-transport-1"></i> Valet</a></li>
-  		
+  			<li class="tabs-title"><a href="#panel7"><i class="flaticon-transport-1"></i> Valet</a></li>	
 		</ul>
 
-	<div class="tabs-content" data-tabs-content="example-tabs">
-  	<div class="tabs-panel is-active" id="panel1">
+	<div class="tabs-content">
+  	<div class="content active" id="panel1">
     <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
-    	<div class="row">
-			<div class="large-6 medium-4 small-12 columns"><strong>Total Bill</strong></div>
+    <div class="row">
+			<div class="large-6 medium-4 small-12 columns"><strong>Total Bill</strong>
+			</div>
 			<div class="large-6 medium-4 small-12 columns">
 				<input type="text" name="total" id="bill" placeholder="$0.00" required>
 			</div>
 		<div class="row">
 			<form>
-				<div class="medium-5 columns">
 				<input id="average" type="radio" value="average"><h4><i class="flaticon-money"></i> Average</h4>
-				</div>
-				<div class="medium-5 columns">
+				
 				 <input id="generous" type="radio" value="generous"><h4><i class="flaticon-man"></i> Feelin Generous</h4>
-				</div>
+				
 			</form>
 		</div>
 		
@@ -65,25 +63,24 @@
 			Total: <span id="total"></span>
 			</div>
 		</div>
+  		
+  	</div> 
   	</div>
-  	<div class="tabs-panel" id="panel2">
+  	<div class="content" id="panel2">
     <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
   	</div>
-  	<div class="tabs-panel" id="panel3">
+  	<div class="content" id="panel3">
     <p>For Bartenders, you want to tip $1 per drink or 15% of your bill... unless you're feeling extra generous or that drink was outta this world...</p>
   	</div>
-  	<div class="tabs-panel" id="panel4">
+  	<div class="content" id="panel4">
     <p>Whether it's hair or nails, generally the rule of thumb is 15%. If you don't have cash on you, don't forget to see if they can add the tip to your total before they run your card...</p>
   	</div>
-  	<div class="tabs-panel" id="panel5">
-    <p>For massages, a 10% tip is generally accepted. 15% if you really really got to let go and relax though.</p>
-  	</div>
-  	<div class="tabs-panel" id="panel6">
+  
+  	<div class="content" id="panel6">
     <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
   	</div>
-  	<div class="tabs-panel" id="panel7">
+  	<div class="content" id="panel7">
     <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-
   	</div>
 </div>
 </div>
@@ -92,19 +89,27 @@
 
 <!--After submission, show results-->
 <div class="row">
-<h3>Sources &amp; References</h3>
-<h6>Thanks to this article in <a href="http://www.businessinsider.com/this-is-how-much-you-should-tip-for-every-service-2012-8" target="_blank">Business Insider</a> for the guidelines and other useful info about tips</h6> 
+<h5>Sources &amp; References</h5>
+<h6>Thanks <a href="http://www.businessinsider.com/this-is-how-much-you-should-tip-for-every-service-2012-8" target="_blank">Business Insider</a> for the rules/recommendations about tips.</h6> 
 <h6>Thanks <a href="http://www.flaticon.com/" target="_blank">Flat Icon!</a> Icons by Freepik</h6>
 </div>
 
-	<footer></footer>
+	<footer>
+		<div class="row">
+		<div class="small-2 columns logo">
+			<a href="#"><i class="flaticon-shopping"></i> TipCalculator</a>
+	</footer>
 	<!--<script src="js/scripts.js"></script>-->
-	<script src="js/scripts.js" type="text/javascript"></script>
-	<script src="foundation-5.5.3/js/vendor/jquery.js"></script>
-	<script src="foundation-5.5.3/js/foundation.min.js"></script>
-	<script src="foundation-5.5.3/js/foundation/foundation.tab.js">
+	
+	<script src="foundation/js/vendor/fastclick.js"></script>
+	<script src="foundation/js/vendor/jquery.js"></script>
+	<script src="foundation/js/foundation.min.js"></script>
+	<script src="foundation/js/foundation/foundation.tab.js">
 	</script>
-	<script src="foundation-5.5.3/js/vendor/fastclick.js"></script>
+		<script src="foundation/js/foundation/foundation.alert.js"></script>
+	<script>
+      $(document).foundation();
+    </script>
 	
 </body>
 

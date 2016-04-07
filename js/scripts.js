@@ -2,7 +2,7 @@
 Standard = 15% 
 I'm feeling generous = 20%*/
 
-function calc() {
+function calcRestaurantGenerous() {
     var bill = document.getElementByID('bill').value;
     var tip = bill * .20;
     var total = bill + tip;
@@ -12,8 +12,19 @@ function calc() {
 
 /*Delivery = 10%
 I'm feeling generous = 15%
-2$ minimum
+2$ minimum*/
+function calcDeliveryNormal(){
+	var bill = document.getElementById('bill').value;
+	var tip = bill * .10;
+	var total = bill + tip;
+}
 
+function calcDeliveryGenerous(){
+	var bill = document.getElementById('bill').value;
+	var tip = bill * .15;
+	var total = bill + tip;
+}
+/* 
 
 Beauty Salon
 Standard = 15%
