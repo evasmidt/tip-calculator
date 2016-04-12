@@ -17,10 +17,7 @@
 	<div class="row">
 	<h1>Tip Calculator</h1>
 
-	<div data-alert class="alert-box">
-  TEST
-  <a href="#" class="close">&times;</a>
-</div>
+
 	<!--<h2>When you don't want to have to think</h2>-->
 	</div>
 	
@@ -37,37 +34,48 @@
 
 	<div class="tabs-content">
   	<div class="content active" id="panel1">
-    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
-    <div class="row">
-			<div class="large-6 medium-4 small-12 columns"><strong>Total Bill</strong>
-			</div>
-			<div class="large-6 medium-4 small-12 columns">
+    <p class="tabs-content-inside">Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
+    <div class="large-6 medium-4 small-12 columns"><strong>Total Bill</strong>
+			
+			
 				<input type="text" name="total" id="bill" placeholder="$0.00" required>
 			</div>
-		<div class="row">
+		<!-- 
 			<form>
 				<input id="average" type="radio" value="average"><h4><i class="flaticon-money"></i> Average</h4>
 				
 				 <input id="generous" type="radio" value="generous"><h4><i class="flaticon-man"></i> Feelin Generous</h4>
 				
-			</form>
-		</div>
+			</form> -->
 		
-		<div class="row">
-			<div class="large-offset-8 columns"><input type="submit" value="Calculate" onclick="calcDiningAverage" class="button">
-			</div>
+	<div class="large-6 medium-4 small-12 columns">
+	<input type="submit" value="Calculate" onclick="calcDiningAverage" class="button">
 		</div>
-		<div class="row">
-			<div class="large-6 medium-4 small-12 columns">
+	
+			<div class="medium-6 offset-3 tabs-content-inside">
 			Tip: <span id="tip"></span><br>
 			Total: <span id="total"></span>
 			</div>
-		</div>
+
   		
   	</div> 
-  	</div>
+ 
+
   	<div class="content" id="panel2">
-    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+     <p class="tabs-content-inside">Delivery! Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
+	<div class="large-6 medium-4 small-12 columns"><strong>Total Bill</strong>
+				<input type="text" name="total" id="bill" placeholder="$0.00" required>
+			</div>
+		
+	<div class="large-6 medium-4 small-12 columns">
+	<input type="submit" value="Calculate" onclick="calcDiningAverage" class="button">
+		</div>
+	
+			<div class="medium-6 offset-3 tabs-content-inside">
+			Tip: <span id="tip"></span><br>
+			Total: <span id="total"></span>
+			</div>
+
   	</div>
   	<div class="content" id="panel3">
     <p>For Bartenders, you want to tip $1 per drink or 15% of your bill... unless you're feeling extra generous or that drink was outta this world...</p>
